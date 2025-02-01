@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>598</width>
+    <height>49</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QWidget" name="ingredient" native="true">
+   <property name="geometry">
+    <rect>
+     <x>2</x>
+     <y>1</y>
+     <width>595</width>
+     <height>45</height>
+    </rect>
+   </property>
+   <widget class="QWidget" name="quantityAndUnit" native="true">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>4</y>
+      <width>135</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#quantityAndUnit{
+	border: 1px solid black;
+	border-radius: 6px;
+}</string>
+    </property>
+    <widget class="QLineEdit" name="quantitylineEdit">
+     <property name="geometry">
+      <rect>
+       <x>2</x>
+       <y>1</y>
+       <width>90</width>
+       <height>39</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-radius:6px;</string>
+     </property>
+     <property name="placeholderText">
+      <string>3</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBoxUnit">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>1</y>
+       <width>74</width>
+       <height>39</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial</family>
+       <pointsize>11</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#quantityAndUnit QComboBox{
+    background-color: #D3D3D3;
+	border-radius: 6px;
+}
+#quantityAndUnit QComboBox:hover{
+    border: 1px solid #0078d7;
+}
+#quantityAndUnit QComboBox:focus {
+    border: 1px solid #0056b3;
+}
+#quantityAndUnit QComboBox QAbstractItemView {
+    border: 3px solid black;
+    border-radius: 5px;
+    background-color: white;
+    selection-background-color: #0078d7;
+    selection-color: white;
+    padding: 5px;
+}
+
+#quantityAndUnit QComboBox:drop-down {
+    width: 30px;
+    border: none;
+}
+
+#quantityAndUnit QComboBox:down-arrow {
+    image: url(:/Icons/down_arrow.png);
+    width: 30px;
+    width: 30px;
+}</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>g</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>kg</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>ml</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>l</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>cda</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>cdta</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>taza</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>pizca</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>oz</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>lb</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>lata</string>
+      </property>
+     </item>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="itemIcon">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>7</y>
+      <width>35</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="Recursos.qrc">:/Icons/item.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEditNameIngredient">
+    <property name="geometry">
+     <rect>
+      <x>202</x>
+      <y>4</y>
+      <width>341</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">    border: 1px solid black;
+    border-radius: 8px;</string>
+    </property>
+    <property name="placeholderText">
+     <string>Ejemplo: Pechuga de pollo</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="deleteIngredientButton">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>4</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border:none;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="Recursos.qrc">
+      <normaloff>:/Icons/delete2.png</normaloff>:/Icons/delete2.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>30</width>
+      <height>30</height>
+     </size>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="Recursos.qrc"/>
+ </resources>
+ <connections/>
+</ui>

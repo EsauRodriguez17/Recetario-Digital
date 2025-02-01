@@ -1,0 +1,33 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Icons/delete.png</file>
+        <file>Icons/search.png</file>
+        <file>style.qss</file>
+        <file>Icons/add (1).png</file>
+        <file>Icons/add.png</file>
+        <file>Icons/filter.png</file>
+        <file>Icons/gallery.png</file>
+        <file>Icons/plus.png</file>
+        <file>Icons/setting.png</file>
+        <file>Icons/delete1.png</file>
+        <file>Icons/delete2.png</file>
+        <file>Icons/delete3.png</file>
+        <file>recipeCard.ui</file>
+        <file>Icons/down_arrow.png</file>
+        <file>Icons/item.png</file>
+        <file>ingredientWidget.ui</file>
+        <file>Icons/cancel2.png</file>
+        <file>Icons/cofirmation2.png</file>
+        <file>Icons/search2.png</file>
+        <file>Icons/cancel3.png</file>
+        <file>Icons/back.png</file>
+        <file>Icons/time.png</file>
+        <file>Icons/chef.png</file>
+        <file>Icons/category.png</file>
+        <file>Icons/gorros-de-chef.png</file>
+        <file>Images/platillo2.png</file>
+        <file>Images/platillo4.png</file>
+        <file>Images/platillo5.png</file>
+        <file>Images/platillo6.png</file>
+    </qresource>
+</RCC>

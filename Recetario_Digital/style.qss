@@ -1,0 +1,254 @@
+/* General */
+
+/* Pagina principal */
+
+/* Barra de navegacion */
+
+#navBar,#introduction{
+    background: qlineargradient(
+        x1: 0, y1: 0,
+        x2: 1, y2: 0,
+        stop: 0 rgb(0, 128, 0),
+        stop: 1 rgb(0, 255, 127)
+    );
+}
+
+#navBar QPushButton{
+    border:none;
+}
+
+#navBar QPushButton:hover{
+    background-color: rgb(85, 255, 255);
+    border-radius: 6px;
+}
+
+#navBar QPushButton:checked{
+    border-bottom: 2px solid red;
+}
+
+
+
+#lastRecipes{
+    background-color: #fff;
+}
+
+
+/* Pagina Recetas */
+
+#recipes{
+    background-color: #fff;
+}
+
+#addRecipeButton{
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(240, 128, 0);
+    color: white;
+}
+
+#deleteAllRecipesButton,#deleteAllIngredientsButton,#confirmButton,#cancelButton{
+    border: none;
+    border-radius: 8px;
+    background-color: red;
+    color: white;
+}
+
+#searchRecipeLineEdit{
+    border: 1px solid red;
+    border-radius:6px;
+}
+
+#searchRecipeButton{
+    border-radius:6px;
+}
+
+RecipeCard{
+    background-color: white;
+    border-radius: 8px;
+    color: red;  /* Este es el color del texto, no afecta el fondo */
+    padding: 10px;  /* Añadir padding puede ayudar a que se vea mejor */
+}
+
+RecipeCard QPushButton {
+    border: none;  /* Asegúrate de que los botones no tengan borde */
+}
+
+
+
+/* Pagina añadir receta */
+
+#generalInformationContainer,#ingredientsContainer,#instructionsContainer{
+    background-color:white;
+    border-radius: 8px;
+}
+
+#uploadPhoto{
+    border: 2px dotted black;
+    border-radius: 4px;
+}
+
+#uploadPhotoButton{
+    border:none;
+    padding: 0;
+    color: rgb(240, 128, 0);
+    border-bottom: 2px solid rgb(240, 128, 0);
+}
+
+#generalInformationContainer QLineEdit,QComboBox{
+    border: 1px solid black;
+    border-radius: 6px;
+}
+
+#generalInformationContainer QComboBox:hover{
+    border: 1px solid #0078d7;
+}
+#generalInformationContainer QComboBox:focus {
+    border: 1px solid #0056b3;
+}
+#generalInformationContainer QComboBox QAbstractItemView {
+    border: 3px solid black;
+    border-radius: 5px;
+    background-color: white;
+    selection-background-color: #0078d7;
+    selection-color: white;
+    padding: 5px;
+}
+
+#generalInformationContainer QComboBox:drop-down {
+    width: 30px;
+    border: none;
+}
+
+#generalInformationContainer QComboBox:down-arrow {
+    image: url(:/Icons/down_arrow.png);
+    width: 30px;
+    width: 30px;
+}
+
+
+#addIngredientButton{
+    color: rgb(240, 128, 0);
+    border-radius: 6px;
+    border: 2px solid rgb(240, 128, 0);;
+}
+
+#instructionsText{
+    border: 2px solid black;
+    border-radius: 9px;
+}
+
+#confirmButton{
+    background-color: green;
+}
+
+
+/* Estilo para Scrollbar Vertical */
+
+ QScrollBar:vertical {
+        border: none;
+    background: rgb(45, 45, 68);
+    width: 14px;
+    margin: 15px 0 15px 0;
+        border-radius: 0px;
+ }
+
+/*  HANDLE BAR VERTICAL */
+QScrollBar::handle:vertical {
+        background-color: rgb(80, 80, 122);
+        min-height: 30px;
+        border-radius: 7px;
+}
+QScrollBar::handle:vertical:hover{
+        background-color: rgb(0, 255, 127);
+}
+QScrollBar::handle:vertical:pressed {
+        background-color: rgb(0, 128, 0);
+}
+
+/* BTN TOP - SCROLLBAR */
+QScrollBar::sub-line:vertical {
+        border: none;
+        background-color: rgb(59, 59, 90);
+        height: 15px;
+        border-top-left-radius: 7px;
+        border-top-right-radius: 7px;
+        subcontrol-position: top;
+        subcontrol-origin: margin;
+}
+QScrollBar::sub-line:vertical:hover {
+        background-color: rgb(0, 255, 127);
+}
+QScrollBar::sub-line:vertical:pressed {
+        background-color: rgb(0, 128, 0);
+}
+
+/* BTN BOTTOM - SCROLLBAR */
+QScrollBar::add-line:vertical {
+        border: none;
+        background-color: rgb(59, 59, 90);
+        height: 15px;
+        border-bottom-left-radius: 7px;
+        border-bottom-right-radius: 7px;
+        subcontrol-position: bottom;
+        subcontrol-origin: margin;
+}
+QScrollBar::add-line:vertical:hover {
+        background-color: rgb(0, 255, 127);
+}
+QScrollBar::add-line:vertical:pressed {
+        background-color: rgb(0, 128, 0);
+}
+
+/* RESET ARROW */
+QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical {
+        background: none;
+}
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+        background: none;
+}
+
+
+
+/* Estilo para Scrollbar Horizontal */
+QScrollBar:horizontal {
+    border: none;
+    background: #f1f1f1;
+    height: 12px;
+    margin: 0px 0px 0px 0px;
+}
+
+QScrollBar::handle:horizontal {
+    background: #888;
+    min-width: 20px;
+    border-radius: 6px;
+}
+
+QScrollBar::handle:horizontal:hover {
+    background: #555;
+}
+
+QScrollBar::add-line:horizontal,
+QScrollBar::sub-line:horizontal {
+    border: none;
+    background: none;
+}
+
+QScrollBar::left-arrow:horizontal,
+QScrollBar::right-arrow:horizontal {
+    border: none;
+    background: none;
+}
+
+QScrollBar::add-page:horizontal,
+QScrollBar::sub-page:horizontal {
+    background: none;
+}
+
+
+
+
+
+
+
+
+
