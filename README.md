@@ -61,6 +61,7 @@ La interfaz gráfica está creada con **Qt**, proporcionando un entorno visual i
 - **Comida**
 - **Cena**
 - **Navideño**
+
 ![Imagen de filtrado por la categoria de desayuno](https://drive.google.com/uc?export=view&id=1Uc4A9zEUrzV26Q5Obx7ey-C-skziwBMn)
 ![Imagen de filtrado por la categoria de comida](https://drive.google.com/uc?export=view&id=1ogzsM3Fzgm7flAGCpzTD0eqjBNnMjA-x)
 ![Imagen de filtrado por la categoria de cena](https://drive.google.com/uc?export=view&id=1hbccGuF9luWV2VoLdqtdqADCIYKJHD5S)
