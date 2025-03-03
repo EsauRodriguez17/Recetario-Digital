@@ -33,7 +33,7 @@ La interfaz gráfica está creada con **Qt**, proporcionando un entorno visual i
 
 ## 1. Página de Inicio
 - **Descripción**: Muestra las últimas recetas agregadas.
-- ![Imagen de la página de inicio](https://drive.google.com/file/d/1BLFDJrBHide_KlGGlo92B2Udq9tLd1as/view?usp=drive_link)
+- ![Imagen de la página de inicio](https://github.com/user-attachments/assets/2b251b07-b30c-4e4d-ae88-90ee7aaaa854)
 
 ## 2. Página de Recetas
 - **Descripción**: Muestra todas las recetas con su información general y su imagen.
